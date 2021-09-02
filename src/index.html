@@ -33,10 +33,12 @@
     </div>
   <![endif]-->
 
-  <header>
-    <nav class="navbar navbar-expand-md">
-      <div class="container">
-        <a href="#" class="navbar-brand">Navbar</a>
+  <header class="section-header">
+    <div class="container custom-container">
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand">
+          <img id="logo" class="image-logo" src="assets/images/LOGO.png" alt="Katy">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
@@ -44,82 +46,131 @@
           <span class="icon-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="#" class="nav-link">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a href="#" class="nav-link">Pet Boarding</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Link</a>
+              <a href="#" class="nav-link">Grooming</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link disabled">Disabled</a>
+              <a href="#" class="nav-link">Doggy Daycare</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Testimonals</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
-
   <main class="home">
-    <div class="section-intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="content">
-              <h1>Katy Project</h1>
-              <a href="about.html">Go to about page.</a>
-              <p>Use this document as a way to quickly start any new project.
-                <br> All you get is this text and a mostly barebones HTML document.</p>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Hi I am a sample modal
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
+    <div class="section-banner">
+      <div class="container custom-container">
+        <img class="paw-background" src="../assets/images/paw copy 8.png">
+        <div class="content">
+          <span class="title-holder">
+            <h1 class="title">Here at Katy Dog Kennels, We Baby Your Baby!</h1>
+          </span>
+          <div class="content-holder">
+            <div class="paw-content">
+              <span class="paw-left">
+                <img class="slider-image" src="../assets/images/paw copy.png">
+              </span>
+              <span class="paw-right">
+                <img class="slider-image" src="../assets/images/paw copy 2.png">
+              </span>
+              <span class="paw-left">
+                <img class="slider-image" src="../assets/images/paw copy 3.png">
+              </span>  
+              <span class="paw-right">
+                <img class="slider-image" src="../assets/images/paw copy 4.png">
+              </span>
+              <span class="paw-left">
+                <img class="slider-image" src="../assets/images/paw copy 5.png">
+              </span>
+              <span class="paw-right">
+                <img class="slider-image" src="../assets/images/paw copy 6.png">
+              </span>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="image-holder">
+                    <img class="paw-patrol" src="../assets/images/dogs-1-combined.png">
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="image-holder">
+                    <img class="paw-patrol" src="../assets/images/dogs-1-combined.png">
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="image-holder">
+                    <img class="paw-patrol" src="../assets/images/dogs-1-combined.png">
+                  </span>
                 </div>
               </div>
-
-              <!-- Swiper -->
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">I'm a pagination slider without navigation. <br/> Swipe Right</div>
-                  <div class="swiper-slide">Swipe Right Again</div>
-                  <div class="swiper-slide">Swipe Left</div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-
+            </div>
+            <div class="arrow-buttons">
+              <i class="fas fa-angle-right"></i>
+              <img class="arrow-background" src="../assets/images/Rectangle 2.png">
+              <i class="fas fa-angle-left"></i>
             </div>
           </div>
+          <button type="button" class="btn">
+            <p class="btn-title">Get Started</p>
+          </button>
+        </div>
+        <div class="fixed-sidebar">
+          <p class="heading">Book My Pet</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-mission">
+      <div class="container custom-container">
+        <span class="dog-image">
+          <img id="pug-image" src="../assets/images/side dog.png">
+        </span>
+        <div class="title-heading">
+          <span class="title">Circle Ranch Dog Boarding</span>
+          <span class="description-holder">
+            <p class="travel-description">As a dog owners who travel, it is important to us at
+              Circle Lake Ranch Pet Resort to be able to leave home and not worry about our
+              pets. It is our mission that our pet guests are comfortable, relaxed and well-cared
+              for as they stay at our dog boarding kennels at the Circle Lake Ranch Pet Resort.
+            </p>
+          </span>
+          <span class="description-holder">
+            <p class="vacation-description">Our goal is for your dog to want to return and to feel 
+              that being here is like being on vacation. Many customers tell us their dog gets
+              excited when they turn down our long gravel driveway. Our expert loving staff has
+              over 30 years of combined experience in quality animal care and all our staff are
+              certified by the Pet Care Services Association.
+            </p>
+          </span>
+          <span class="description-holder">
+            <p class="health-heading">To keep everyone healthy and happy, current shot records
+              are required. We also want you to bring your own food from home so your dog is as
+              comfortable as possible.</p>
+          </span>
+          <span class="heading-holder">
+            <p id="visitor-heading">Visitors are Welcome!</p>
+          </span>
         </div>
       </div>
     </div>
   </main>
+  <div class="section-footer">
+    <div class="container">
+      <div class="three-content-holder">
+        <p class="sampletitle">SAMPLE FOOTER</p>
+      </div>
+    </div>
+  </div>
 
   <!-- build:js scripts/main.min.js -->
   <script src="./scripts/vendors/jquery.min.js"></script>

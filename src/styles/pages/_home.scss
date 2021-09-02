@@ -7,30 +7,100 @@
 .home {
   transition: all .2s ease-in-out;
   
-  .section-intro {
-    padding: 40px 0;
+  .section-banner {
+    padding-top: 10%;
 
-    text-align: center;
+    background-image: url("../assets/images/Layer 43-1-combined.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .paw-holder {
+      position: absolute;
+      bottom: 42%;
+      left: 60%;
+    }
+
+    .title {
+      font-family: $font-opensans-regular;
+      font-size: 50px;
+      color: $dirty-white;
+      text-align: center;
+    }
+
+    .content-holder {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .paw-content {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    .paw-left {
+      margin-right: 30px;
+    }
+
+    .paw-right {
+      margin-left: 30px;
+    }
+
+    .paw-patrol {
+      width: 97%;
+    }
+
+    .arrow-buttons {
+      .arrow-background {
+        width: 100%;
+      }
+    }
+
+    .heading {
+      position: fixed;
+      top: 38%;
+      right: 0;
+      left: 93.9%;
+      
+      width: 150px;
+      height: 80px;
+      
+      font-family: $font-opensans-semibold;
+      font-size: 16px;
+      color: $white;
+
+      background-image: url("../assets/images/Rounded Rectangle 6.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      transform: rotate(90deg);
+    }
+
+    // padding: 40px 0;
+    
+    // text-align: center;
+    // .swiper-container {
+    //   margin-top: 40px;
+    //   width: 500px;
+    //   height: 300px;
+    //   overflow: hidden;
+    
+    //   border: 2px #007aff solid;
+    //   border-radius: 3px;
+    // }
+    
+    // .swiper-slide {
+    //   text-align: center;
+    //   font-size: 18px;
+    //   background: #fff;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
   }
 }
 
 
-.swiper-container {
-  margin-top: 40px;
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
-
-  border: 2px #007aff solid;
-  border-radius: 3px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
