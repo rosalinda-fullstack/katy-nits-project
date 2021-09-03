@@ -3,21 +3,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.home {
-    .section-banner {
-        .btn {
-            margin: 0 40%;
 
-            background-color: $orange;
-        }
+    .btn {
+        margin: 0 40%;
 
-        .btn-title {
-            padding: 10px 76px 10px;
-            margin-bottom: 0;
-
-            font-family: $font-opensans-semibold;
-            font-size: 22px;
-            color: $white;
-        }
+        background-color: $orange;
+        border-radius: 10px;
     }
-}
+
+    .btn-title {
+        padding: 10px 76px 10px;
+        margin-bottom: 0;
+
+        font-family: $font-opensans-semibold;
+        font-size: 22px;
+        color: $white;
+    }

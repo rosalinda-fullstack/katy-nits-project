@@ -12,6 +12,8 @@
 
     background-color: transparent;
     
+    z-index: 999;
+
     &.sticky {
         background-color: $gradient-yellow;
 
@@ -19,7 +21,7 @@
     }
     
     .navbar {
-        padding: 0;
+        padding: 40px 0 30px;
     }
 
     .nav-item {
