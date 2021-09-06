@@ -72,24 +72,14 @@
       <div class="container custom-container">
         <h1 class="title-intro">Here at Katy Dog Kennels, We Baby Your Baby!</h1>
         <div class="fixed-paw-bar">
-          <span class="paw-left">
-            <img class="slider-image" src="../assets/images/paw copy.png">
-          </span>
-          <span class="paw-right">
-            <img class="slider-image" src="../assets/images/paw copy 2.png">
-          </span>
-          <span class="paw-left">
-            <img class="slider-image" src="../assets/images/paw copy 3.png">
-          </span>  
-          <span class="paw-right">
-            <img class="slider-image" src="../assets/images/paw copy 4.png">
-          </span>
-          <span class="paw-left">
-            <img class="slider-image" src="../assets/images/paw copy 5.png">
-          </span>
-          <span class="paw-right">
-            <img class="slider-image" src="../assets/images/paw copy 6.png">
-          </span>
+          <ul class="paw-list">
+            <a href="#"><img class="paw-left" src="../assets/images/paw copy 3.png"></a>
+            <a href="#"><img class="paw-right" src="../assets/images/paw copy 2.png"></a>
+            <a href="#"><img class="paw-left" src="../assets/images/paw copy 3.png"></a>
+            <a href="#"><img class="paw-right" src="../assets/images/paw copy 4.png"></a>
+            <a href="#"><img class="paw-left" src="../assets/images/paw copy 5.png"></a>
+            <a href="#"><img class="paw-right" src="../assets/images/paw copy 6.png"></a>
+          </ul>
         </div>
         <div class="swiper-arrow-holder">
           <div class="swiper-container">
@@ -106,49 +96,46 @@
             </div>
           </div>
           <div class="arrow-buttons">
-            <i id="right-arrow" class="fas fa-angle-right"></i>
             <img class="arrow-background" src="../assets/images/Rectangle 2.png">
-            <i id="left-arrow" class="fas fa-angle-left"></i>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
         <button type="button" class="btn">
-          <p class="btn-title">Get Started</p>
+          <a href="#" class="btn-title">Get Started</a>
         </button>
         <div class="fixed-booking-bar">
           <p class="heading">Book My Pet</p>
         </div>
+          <img class="bg-retriever" src="../assets/images/paw shadow.png">
+          <img class="retriever" src="../assets/images/LABRADOR.png">
       </div>
     </div>
     <div class="section-mission">
       <div class="container custom-container">
-        <span class="dog-image">
-          <img id="pug-image" src="../assets/images/side dog.png">
+        <img id="pug-image" src="../assets/images/side dog.png">
+        <span class="title-holder"><p class="title">Circle Ranch Dog Boarding</p></span>
+        <span class="heading-holder"><p class="heading">As a dog owners who travel, it is important to us at
+            Circle Lake Ranch Pet Resort to be able to leave home and not worry about our
+            pets. It is our mission that our pet guests are comfortable, relaxed and well-cared
+            for as they stay at our dog boarding kennels at the Circle Lake Ranch Pet Resort.</p>
         </span>
-        <div class="title-heading">
-          <span class="title">Circle Ranch Dog Boarding</span>
-          <span class="description-holder">
-            <p class="travel-description">As a dog owners who travel, it is important to us at
-              Circle Lake Ranch Pet Resort to be able to leave home and not worry about our
-              pets. It is our mission that our pet guests are comfortable, relaxed and well-cared
-              for as they stay at our dog boarding kennels at the Circle Lake Ranch Pet Resort.
-            </p>
-          </span>
-          <span class="description-holder">
-            <p class="vacation-description">Our goal is for your dog to want to return and to feel 
-              that being here is like being on vacation. Many customers tell us their dog gets
-              excited when they turn down our long gravel driveway. Our expert loving staff has
-              over 30 years of combined experience in quality animal care and all our staff are
-              certified by the Pet Care Services Association.
-            </p>
-          </span>
-          <span class="description-holder">
-            <p class="health-heading">To keep everyone healthy and happy, current shot records
-              are required. We also want you to bring your own food from home so your dog is as
-              comfortable as possible.</p>
-          </span>
-          <span class="heading-holder">
-            <p id="visitor-heading">Visitors are Welcome!</p>
-          </span>
+        <span class="heading-holder"><p class="heading">Our goal is for your dog to want to return and to feel 
+            that being here is like being on vacation. Many customers tell us their dog gets
+            excited when they turn down our long gravel driveway. Our expert loving staff has
+            over 30 years of combined experience in quality animal care and all our staff are
+            certified by the Pet Care Services Association.</p>
+        </span>
+        <span class="heading-holder"><p class="heading">To keep everyone healthy and happy, current shot records
+            are required. We also want you to bring your own food from home so your dog is as
+            comfortable as possible.</p></span>
+        <span class="sub-holder"><p class="sub-heading">Visitors are Welcome!</p></span>
+      </div>
+    </div>
+    <div class="services-options">
+      <div class="container custom-container">
+        <div class="icon-holder">
+          <p>trial</p>
         </div>
       </div>
     </div>
@@ -169,6 +156,7 @@
   <script src="./scripts/core/base.js"></script>
   <script src="./scripts/modules/theme-module.js"></script>
   <script src="./scripts/bootstrapper.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- endbuild -->
 
   <!--[if lte IE 9]>

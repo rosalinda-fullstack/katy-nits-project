@@ -9,8 +9,9 @@ AppName.Modules.ThemeModule = (function () {
     // private stuff
 
     const swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   };
@@ -27,12 +28,26 @@ AppName.Modules.ThemeModule = (function () {
       });
     });
   }
+
+  const _pawbarScroll = () => {
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+        $('paw-list').addClass("sticky");
+        }
+        else{
+        $('paw-list').removeClass("sticky");
+        }
+      });
+    });
+  }
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
     _headerScroll();
+    _pawbarScroll();
   };
 
   return {

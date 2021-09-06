@@ -13,8 +13,6 @@
 
     background-image: url("../assets/images/banner-background.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     .title-intro {
       font-family: $font-opensans-regular;
@@ -27,26 +25,36 @@
       position: fixed;
       left: 0;
       top: 28%;
-
+ 
       display: flex;
       flex-direction: column;
       margin: 10px;
       width: 4%;
-      
-      background: $dark-grey;
-      opacity: 18%;
-    }
-
-    .paw-content {
-      display: flex;
     }
 
     .paw-left {
       margin-right: 30px;
-    }
 
+      border: 1px solid transparent;
+
+      &:hover {
+        background-image: none;
+        background-image: url("../assets/images/paw orange-right.png");
+        background-repeat: no-repeat;
+        border: 1px solid transparent;
+      }
+    }
+    
     .paw-right {
       margin-left: 30px;
+      
+      border: 1px solid transparent;
+
+      &:hover {
+        background-image: url("../assets/images/paw orange-left.png");
+        background-repeat: no-repeat;
+        border: 1px solid transparent;
+      }
     }
 
     .swiper-arrow-holder {
@@ -66,63 +74,138 @@
       width: 100%;
     }
 
-    .arrow-buttons {
-      padding-left: 30px;
-      width: 126px;
+    .arrow-background {
+      position: relative;
+      right: 83px;
+      bottom: 15px;
+      
+      width: 180px;
 
       z-index: 1;
+    }
 
-      .arrow-background {
-        position: relative;
-        right: 110px;
-        bottom: 42px;
-        
-        width: 180px;
+    .swiper-button-next {
+      position: absolute;
+      top: 38.4%;
+      right: 13.5%;
+      left: auto;
+
+      margin-top: 22px;
+      width: 27px;
+      height: 44px;
+
+      background-size: 27px 44px;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      cursor: pointer;
+
+      z-index: 2;
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+      top: 45%;
+      left: 81.8%;
+
+      margin-top: 22px;
+      width: 27px;
+      height: 44px;
+
+      background-size: 27px 44px;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      cursor: pointer;
+      
+      z-index: 2;
+    }
+
+    .fixed-booking-bar {
+      position: fixed;
+      top: 41%;
+      right: 0;
+      left: 93.1%;
+
+      width: 205px;
+      height: 55px;
+
+      background: $light-green;
+      border: 2px solid transparent;
+      border-radius: 0 0 15px 15px;
+
+      transform: rotate(90deg);
+
+      z-index: 999;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $light-green;
+
+        .heading {
+          color: $light-green;
+        }
       }
     }
 
-    #right-arrow {
-      position: relative;
-      top: 21%;
-      right: 9%;
-      font-size: 62px;
-      z-index: 999;
-    }
-    
-    #left-arrow {      
-      position: relative;
-      bottom: 36%;
-      right: 53%;
-      font-size: 62px;
-      z-index: 999;
-    }
-
     .heading {
-      position: fixed;
-      top: 38%;
-      right: 0;
-      left: 93.9%;
-      
-      width: 150px;
-      height: 80px;
-      
+      margin: 14px 50px 0;
+
       font-family: $font-opensans-semibold;
       font-size: 16px;
-      color: $white;
-
-      background-image: url("../assets/images/Rounded Rectangle 6.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-
-      transform: rotate(90deg);
+      color: $white;      
     }
 
-    .arrow-buttons {
-      width: 180px;
+    .bg-retriever {
+      position: relative;
+      right: 12.5%;
+    }
+
+    .retriever {
+      position: absolute;
+      top: 2.5%;
+      right: 0;
+      bottom: 0;
+
+      z-index: 1;
+    }
+  }
+
+  .section-mission {
+    #pug-image {
+      position: relative;
+      position: relative;
+      top: 0;
+      right: 7%;
+
+      width: 16%;
+    }
+
+    .title {
+      font-family: $font-opensans-semibold;
+      font-size: 30px;
+      color: $mid-blue;
+      text-align: center;
+    }
+
+    .heading-holder {
+      text-align: center;
+      
+      .heading {
+        padding: 0 276px 0;
+    
+        font-family: $font-opensans-regular;
+        font-size: 18px;
+        color: $mid-blue;
+      }
+    }
+
+
+    .sub-heading {
+      font-family: $font-opensans-semibold;
+      font-size: 18px;
+      color: $mid-blue;
+      text-align: center;
     }
   }
 }
-
-
-
