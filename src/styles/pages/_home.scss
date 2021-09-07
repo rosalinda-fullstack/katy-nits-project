@@ -9,7 +9,6 @@
   
   .section-banner {
     padding-top: 15%;
-    padding-bottom: 9%;
 
     background-image: url("../assets/images/banner-background.png");
     background-repeat: no-repeat;
@@ -156,29 +155,34 @@
       color: $white;      
     }
 
-    .bg-retriever {
-      position: relative;
-      right: 12.5%;
-    }
-
     .retriever {
       position: absolute;
-      top: 2.5%;
-      right: 0;
+      top: 53.5%;
+      right: 4%;
       bottom: 0;
-
+      
       z-index: 1;
     }
-  }
 
+    .shadow {
+      position: relative;
+      right: 12.8%;
+      top: 9px;
+    }
+  }
+  
   .section-mission {
     #pug-image {
       position: relative;
-      position: relative;
-      top: 0;
-      right: 7%;
+      right: 86%;
+      bottom: 27%;
 
-      width: 16%;
+      width: 300px;
+    }
+
+    .content-holder {
+      display: flex;
+      flex-direction: row;
     }
 
     .title {
@@ -188,21 +192,28 @@
       text-align: center;
     }
 
+    #pug-holder {
+      width: 8%;
+    }
+
+    .text-holder {
+      width: 82%;
+    }
+
     .heading-holder {
       text-align: center;
       
       .heading {
-        padding: 0 276px 0;
+        padding: 0 203px 10px;
     
-        font-family: $font-opensans-regular;
-        font-size: 18px;
+        font-family: $font-opensans-semibold;
+        font-size: 15px;
         color: $mid-blue;
       }
     }
 
-
     .sub-heading {
-      font-family: $font-opensans-semibold;
+      font-family: $font-opensans-bold;
       font-size: 18px;
       color: $mid-blue;
       text-align: center;
