@@ -172,10 +172,15 @@
   }
   
   .section-mission {
+    #pug-holder {
+      width: 8%;
+      height: 10px;
+    }
+
     #pug-image {
       position: relative;
       right: 86%;
-      bottom: 27%;
+      bottom: 100px;
 
       width: 300px;
     }
@@ -217,6 +222,37 @@
       font-size: 18px;
       color: $mid-blue;
       text-align: center;
+    }
+  }
+
+  .section-services {
+    padding-top: 8%;
+
+    background-image: url("../assets/images/Rectangle 4-combined.png");
+    background-repeat: no-repeat;
+
+    .icon-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .icon-title {
+      width: 11%;
+
+      text-align: center;
+    }
+
+    .title {
+      margin: 15px 0;
+
+      font-family: $font-opensans-semibold;
+      font-size: 16px;
+      color: $white;
+    }
+
+    .icon {
+      width: 86%;
     }
   }
 }
