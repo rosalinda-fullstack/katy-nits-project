@@ -164,7 +164,7 @@ html {
 
     .retriever {
       position: absolute;
-      top: 56.9%;
+      top: 53%;
       right: 4%;
       bottom: 0;
       
@@ -174,7 +174,7 @@ html {
     .shadow {
       position: relative;
       right: 12.8%;
-      top: 9px;
+      top: 5px;
     }
   }
   
@@ -414,23 +414,6 @@ html {
       color: $white !important;
     }
 
-    .btn {
-      padding: 6px 0;
-      margin: 3% 26.8%;
-
-      background-color: $pale-green;
-      border: 2px solid transparent;
-
-      &:hover {
-        background-color: $white;
-        border: 2px solid $pale-green;
-
-        .heading {
-          color: $pale-green;
-        }
-      }
-    }
-
     .heading {
       padding: 10px 0;
       margin-bottom: 0;
@@ -453,7 +436,7 @@ html {
   }
 
   .section-dog-month {
-    padding: 3% 0 3%;
+    padding: 3% 0 2%;
 
     background-image: url("../assets/images/Layer 43.png");
     background-repeat: no-repeat;
@@ -517,6 +500,89 @@ html {
       font-family: $font-opensans-semibold;
       font-size: 30px;
       color: $white;
+    }
+  }
+
+  .section-feedback {
+    padding: 3% 0 5%;
+
+    background-image: url("../assets/images/Rectangle 10.png");
+    background-repeat: no-repeat;
+
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-image: url("../assets/images/Rounded Rectangle 5.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .title {
+      margin-top: 17%;
+      margin-bottom: 2%;
+
+      font-family: $font-opensans-bold;
+      font-size: 35px;
+      color: $mid-blue;
+    }
+
+    .description {
+      margin: 0 0 20px;
+      width: 85%;
+      
+      font-family: $font-opensans-regular;
+      font-size: 14px;
+      color: $mid-blue;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .profile-icon {
+      margin: 18px 0 0;
+      width: 8%;
+    }
+
+    .name {
+      margin: 10px 0 10px;
+
+      font-family: $font-opensans-semibold;
+      font-size: 25px;
+      color: $mid-blue;
+    }
+
+    .type {
+      margin-bottom: 10%;
+
+      font-family: $font-opensans-semibold;
+      font-size: 14px;
+      color: $mid-blue;
+    }
+  }
+
+  .section-apply {
+    padding: 2% 0 2%;
+    
+    background-image: url("../assets/images/Layer 34.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    .title {
+      font-family: $font-opensans-semibold;
+      font-size: 40px;
+      color: $white;
+      text-align: center;
+    }
+
+    .description {
+      font-family: $font-opensans-regular;
+      font-size: 16px;
+      color: $white;
+      text-align: center;
     }
   }
 }

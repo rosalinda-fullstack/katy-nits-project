@@ -8,10 +8,21 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
 
-    const swiper = new Swiper('.swiper-container', {
+    const swiperBanner = new Swiper('.swiper-arrow-holder', '.swiper-container', {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    });
+  };
+
+  const _feedbackPagination = () => {
+    // private stuff
+
+    const swiperFeedback = new Swiper('swiper-feedback', '.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   };
@@ -48,6 +59,7 @@ AppName.Modules.ThemeModule = (function () {
     _privateMethod();
     _headerScroll();
     _pawbarScroll();
+    _feedbackPagination();
   };
 
   return {
