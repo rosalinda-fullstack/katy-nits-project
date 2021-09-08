@@ -3,6 +3,9 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+html {
+  scroll-behavior: smooth;
+}
 
 .home {
   transition: all .2s ease-in-out;
@@ -85,8 +88,8 @@
 
     .swiper-button-next {
       position: absolute;
-      top: 38.4%;
-      right: 13.5%;
+      top: 39.4%;
+      right: 13.4%;
       left: auto;
 
       margin-top: 22px;
@@ -99,13 +102,15 @@
       
       cursor: pointer;
 
+      filter: grayscale(1) brightness(6.5);
+
       z-index: 2;
     }
 
     .swiper-button-prev {
       position: absolute;
-      top: 45%;
-      left: 81.8%;
+      top: 45.7%;
+      left: 81.7%;
 
       margin-top: 22px;
       width: 27px;
@@ -116,6 +121,8 @@
       background-repeat: no-repeat;
       
       cursor: pointer;
+
+      filter: grayscale(1) brightness(6.5);
       
       z-index: 2;
     }
@@ -442,6 +449,74 @@
     .food-image {
       width: 38%;
       height: 300px;
+    }
+  }
+
+  .section-dog-month {
+    padding: 3% 0 3%;
+
+    background-image: url("../assets/images/Layer 43.png");
+    background-repeat: no-repeat;
+
+    .two-content-holder {
+      display: flex;
+      flex-direction: row;
+      margin: 190px 74px 90px;
+      width: 90%;
+    }
+
+    .image-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #pup-image {
+      width: 25%;
+    }
+
+    .bg-pup {
+      width: 0;
+      height: 10px;
+
+      .pup {
+        position: relative;
+        bottom: 138px;
+        left: 32px;
+
+        width: 400px;
+      }
+    }
+
+    .title {
+      margin-top: 25px;
+
+      font-family: $font-opensans-bold;
+      font-size: 45px;
+      color: $white;
+      letter-spacing: 1.5px;
+    }
+
+    .description {          
+      font-family: $font-opensans-regular;
+      font-size: 16px;
+      color: $white;
+      line-height: 1.7;
+      text-align: center;
+
+      &:first-child {
+        margin: 2% 0;
+      }
+
+      &:last-child {
+        margin: 2% 4.2%;
+      }
+    }
+
+    .heading {
+      font-family: $font-opensans-semibold;
+      font-size: 30px;
+      color: $white;
     }
   }
 }
