@@ -8,7 +8,7 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
 
-    const swiperBanner = new Swiper('.swiper-arrow-holder', '.swiper-container', {
+    const swiperBanner = new Swiper('.swiper-container', {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -19,10 +19,9 @@ AppName.Modules.ThemeModule = (function () {
   const _feedbackPagination = () => {
     // private stuff
 
-    const swiperFeedback = new Swiper('swiper-feedback', '.swiper-container', {
+    const swiperFeedback = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
       },
     });
   };
