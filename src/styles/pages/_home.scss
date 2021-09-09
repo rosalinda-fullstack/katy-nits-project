@@ -23,7 +23,7 @@ html {
       text-align: center;
     }
 
-    .fixed-paw-bar {
+    .sticky-div {
       position: fixed;
       left: 0;
       top: 28%;
@@ -32,6 +32,26 @@ html {
       flex-direction: column;
       margin: 10px;
       width: 4%;
+
+      background-color: transparent;
+      border-radius: 15px;
+
+      scroll-behavior: smooth;
+
+      z-index: 999;
+
+      &.sticky {
+        background-color: $mid-blue;
+
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .paw-list {
+      padding: 10px 6px;
+      margin: 0;
+
+
     }
 
     .paw-left {
@@ -48,7 +68,7 @@ html {
     }
     
     .paw-right {
-      margin-left: 30px;
+      margin-left: 34px;
       
       border: 1px solid transparent;
 
@@ -71,6 +91,7 @@ html {
       margin-left: 8.5%;
       width: 100%;
     }
+     
 
     .paw-patrol {
       width: 100%;
@@ -129,7 +150,7 @@ html {
 
     .fixed-booking-bar {
       position: fixed;
-      top: 41%;
+      top: 37%;
       right: 0;
       left: 93.1%;
 
@@ -401,17 +422,17 @@ html {
 
       font-family: $font-opensans-regular;
       font-size: 12px;
+      color: white;
 
       background-color: transparent;
       border-radius: 8px;
+      textarea:focus, input:focus {
+        color: white;
+    }
     }
 
     .form-message {
       width: 97%;
-    }
-
-    .form-input input{
-      color: $white !important;
     }
 
     .heading {
@@ -509,16 +530,32 @@ html {
     background-image: url("../assets/images/Rectangle 10.png");
     background-repeat: no-repeat;
 
+    .swiper-feedback {
+      text-align: center;
+    }
 
     .swiper-slide {
       display: flex;
       flex-direction: column;
+      margin-bottom: 100px;
       align-items: center;
 
       background-image: url("../assets/images/Rounded Rectangle 5.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    .swiper-pagination {
+      display: contents;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0 7px;
+      width: 12px;
+      height: 12px;
+
+      background: $dark-blue ;
     }
 
     .title {
@@ -586,3 +623,4 @@ html {
     }
   }
 }
+

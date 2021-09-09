@@ -20,8 +20,11 @@ AppName.Modules.ThemeModule = (function () {
     // private stuff
 
     const swiperFeedback = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 0,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
   };
@@ -42,23 +45,24 @@ AppName.Modules.ThemeModule = (function () {
   const _pawbarScroll = () => {
     $(document).ready(function() {
       $(window).scroll(function() {
-        if ($(this).scrollTop() > 1){  
-        $('paw-list').addClass("sticky");
+        if ($(this).scrollTop() > 1){
+          $('.sticky-div').addClass("sticky");
         }
         else{
-        $('paw-list').removeClass("sticky");
+          $('.sticky-div').removeClass("sticky");
         }
       });
     });
   }
+
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
     _headerScroll();
-    _pawbarScroll();
     _feedbackPagination();
+    _pawbarScroll();
   };
 
   return {
