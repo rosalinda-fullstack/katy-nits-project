@@ -4,49 +4,96 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-    .btn {
-        padding: 14px 0;
-        margin: 0 38%;
+  .btn {
+      padding: 14px 0;
+      margin: 0 38%;
 
-        background-color: $orange;
-        border: 2px solid transparent;
-        border-radius: 10px;
+      background-color: $orange;
+      border: 2px solid transparent;
+      border-radius: 10px;
 
-        &:hover {
-            background-color: $white;
-            border: 2px solid $orange;
+    &:hover {
+        background-color: $white;
+        border: 2px solid $orange;
 
-            a.btn-title {
-                color: $orange;
-            }
+        a.btn-title {
+            color: $orange;
         }
     }
+  }
 
-    a.btn-title {
-        padding: 10px 76px 10px;
-        margin-bottom: 0;
+  a.btn-title {
+      padding: 10px 76px 10px;
+      margin-bottom: 0;
 
-        font-family: $font-opensans-semibold;
-        font-size: 22px;
-        color: $white;
-        text-decoration: none;
-    }
+      font-family: $font-opensans-semibold;
+      font-size: 22px;
+      color: $white;
+      text-decoration: none;
+  }
 
-    
-    .btn-submit {
-        padding: 6px 0;
-        margin: 3% 26.8%;
-  
-        background-color: $pale-green;
-        border: 2px solid transparent;
-        border-radius: 10px;
-  
-        &:hover {
-          background-color: $white;
-          border: 2px solid $pale-green;
-  
-          .heading {
-            color: $pale-green;
-          }
-        }
+  .btn-submit {
+      padding: 6px 0;
+      margin: 3% 26.8%;
+
+      background-color: $pale-green;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+    &:hover {
+      background-color: $white;
+      border: 2px solid $pale-green;
+
+      .heading {
+        color: $pale-green;
       }
+    }
+  }
+
+  @include respond-to (xs) {
+    .btn {
+      padding: 6px 14px;
+      margin: 24px 35px;
+
+      background-color: $orange;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+    &:hover {
+        background-color: $white;
+        border: 2px solid $orange;
+
+        a.btn-title {
+            color: $orange;
+        }
+    }
+  }
+
+  a.btn-title {
+      padding: 0;
+      margin-bottom: 0;
+
+      font-family: $font-opensans-semibold;
+      font-size: 17px;
+      color: $white;
+      text-decoration: none;
+  }
+
+  .btn-submit {
+      padding: 6px 0;
+      margin: 3% 26.8%;
+
+      background-color: $pale-green;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+    &:hover {
+      background-color: $white;
+      border: 2px solid $pale-green;
+
+      .heading {
+        color: $pale-green;
+      }
+    }
+  }
+  }
