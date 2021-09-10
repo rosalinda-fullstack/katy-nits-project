@@ -23,13 +23,13 @@
   }
 
   a.btn-title {
-      padding: 10px 76px 10px;
-      margin-bottom: 0;
+    padding: 10px 76px 10px;
+    margin-bottom: 0;
 
-      font-family: $font-opensans-semibold;
-      font-size: 22px;
-      color: $white;
-      text-decoration: none;
+    font-family: $font-opensans-semibold;
+    font-size: 22px;
+    color: $white;
+    text-decoration: none;
   }
 
   .btn-submit {
@@ -44,32 +44,42 @@
       background-color: $white;
       border: 2px solid $pale-green;
 
-      .heading {
+      .submit-heading {
         color: $pale-green;
       }
     }
   }
 
+  .submit-heading {
+    padding: 10px 0;
+    margin-bottom: 0;
+
+    font-family: $font-opensans-semibold;
+    font-size: 22px;
+    color: $white;
+    text-decoration: none;
+  }
+
   @include respond-to (xs) {
     .btn {
-      padding: 6px 14px;
-      margin: 24px 35px;
+      padding: 8px 85px;
+      margin: 20px 10px;
 
       background-color: $orange;
       border: 2px solid transparent;
       border-radius: 10px;
 
-    &:hover {
+      &:hover {
         background-color: $white;
         border: 2px solid $orange;
 
         a.btn-title {
-            color: $orange;
+          color: $orange;
         }
+      }
     }
-  }
 
-  a.btn-title {
+    a.btn-title {
       padding: 0;
       margin-bottom: 0;
 
@@ -77,23 +87,23 @@
       font-size: 17px;
       color: $white;
       text-decoration: none;
-  }
+    }
 
-  .btn-submit {
-      padding: 6px 0;
-      margin: 3% 26.8%;
+    .btn-submit {
+      padding: 0 0;
+      margin: 5% 0;
 
       background-color: $pale-green;
       border: 2px solid transparent;
       border-radius: 10px;
 
-    &:hover {
-      background-color: $white;
-      border: 2px solid $pale-green;
+      &:hover {
+        background-color: $white;
+        border: 2px solid $pale-green;
 
-      .heading {
-        color: $pale-green;
+        .submit-heading {
+          color: $pale-green;
+        }
       }
     }
-  }
   }

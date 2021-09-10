@@ -256,8 +256,9 @@ html {
 
     background-image: url("../assets/images/Rectangle 4-combined.png");
     background-repeat: no-repeat;
+    background-size: cover;
 
-    .icon-holder {
+    .flex-icon-holder {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -285,8 +286,8 @@ html {
   .section-services {
     background-color: $beige;
     background-image: url("../assets/images/Rectangle 6.png");
-    background-repeat: no-repeat;
     background-position: bottom;
+    background-repeat: no-repeat;
 
     .three-content-holder {
       padding: 5% 0 12%;
@@ -301,7 +302,9 @@ html {
       align-items: center;
       
       background-image: url("../assets/images/pattern copy 3.png");
+      background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 22px;
       
       &:first-child {
@@ -398,7 +401,7 @@ html {
 
     .heading {
       font-family: $font-opensans-regular;
-      font-size: 16px;
+      font-size: 20px;
       color: $white;
     }
 
@@ -420,26 +423,17 @@ html {
 
       font-family: $font-opensans-regular;
       font-size: 12px;
-      color: white;
+      color: $white;
 
       background-color: transparent;
       border-radius: 8px;
       textarea:focus, input:focus {
-        color: white;
+        color: $white;
     }
     }
 
     .form-message {
       width: 97%;
-    }
-
-    .heading {
-      padding: 10px 0;
-      margin-bottom: 0;
-
-      font-family: $font-opensans-regular;
-      font-size: 20px;
-      color: $white;
     }
 
     .image-holder {
@@ -627,14 +621,16 @@ html {
     transition: all .2s ease-in-out;
     
     .section-banner {
-      padding-top: 15%;
-      padding-bottom: 35%;
+      padding-top: 26%;
+      padding-bottom: 10%;
   
       background-image: url("../assets/images/banner-background.png");
+      background-position: right;
       background-repeat: no-repeat;
+      background-size: cover;
   
       .title-intro {
-        margin: 88px 0 0;
+        margin: 50px 0 20px;
 
         font-family: $font-opensans-regular;
         font-size: 24px;
@@ -643,40 +639,18 @@ html {
       }
   
       .sticky-div {
-        position: fixed;
-        left: 0;
-        top: 31.5%;
-   
-        margin-top: 68px;
-        width: 72%;
-        align-items: center;
-
-        background-color: transparent;
-        border-radius: 15px;
-        
-        scroll-behavior: smooth;
-        
-        z-index: 999;
-        
-        &.sticky {
-          background-color: $mid-blue;
-          
-          opacity: 88%;
-
-          transition: all 0.3s ease-in-out;
-        }
+        display: none;
       }
       
       .paw-list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding: 10px 6px;
         margin: 0;
       }
   
       .paw-left {
-        margin-right: 5px;
-        margin-bottom: 30px;
+        margin-right: 30px;
   
         border: 1px solid transparent;
   
@@ -689,8 +663,7 @@ html {
       }
       
       .paw-right {
-        margin-top: 30px;
-        margin-left: 5px;
+        margin-left: 30px;
         
         border: 1px solid transparent;
   
@@ -704,6 +677,7 @@ html {
       .swiper-arrow-holder {
         display: flex;
         flex-direction: row;
+        overflow: hidden;
       }
   
       .swiper-container {
@@ -719,7 +693,7 @@ html {
       }
       
       .paw-patrol {
-        width: 700px;
+        width: 800px;
       }
   
       .arrow-buttons {
@@ -729,7 +703,7 @@ html {
 
       .arrow-background {
         position: relative;
-        top: 60px;
+        top: 47px;
         right: 100px;
         bottom: 0;
 
@@ -739,7 +713,7 @@ html {
   
       .swiper-button-next {
         position: absolute;
-        top: 30.5%;
+        top: 31%;
         right: 13%;
         left: auto;
 
@@ -760,9 +734,8 @@ html {
   
       .swiper-button-prev {
         position: absolute;
-        top: 35%;
-        left: 68%;
-
+        top: 35.5%;
+        left: 67.1%;
         margin-top: 22px;
         width: 27px;
         height: 27px;
@@ -864,7 +837,7 @@ html {
           padding: 0;
       
           font-family: $font-opensans-semibold;
-          font-size: 16px;
+          font-size: 18px;
           color: $mid-blue;
           line-height: 1.8;
         }
@@ -879,45 +852,43 @@ html {
     }
   
     .section-benefit {
-      padding-top: 8%;
-      padding-bottom: 15%;
+      padding-top: 55%;
+      padding-bottom: 10%;
   
       background-image: url("../assets/images/Rectangle 4-combined.png");
       background-repeat: no-repeat;
   
-      .icon-holder {
-        display: flex;
+      #grid-container {
+        display: grid;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
+        grid-template-columns: auto auto;
       }
       
       .icon-title {
-        width: 11%;
+        margin: 8%;
+        width: 76%;
         
         text-align: center;
       }
   
       .title {
-        margin: 15px 0;
+        margin: 14px 0 0;
   
         font-family: $font-opensans-semibold;
-        font-size: 16px;
+        font-size: 14px;
         color: $white;
       }
   
       .icon {
-        width: 86%;
+        width: 100px;
       }
     }
   
     .section-services {
-      background-color: $beige;
-      background-image: url("../assets/images/Rectangle 6.png");
-      background-repeat: no-repeat;
-      background-position: bottom;
-  
       .three-content-holder {
-        padding: 5% 0 12%;
+        padding: 5% 0 50%;
         margin: 0;
       }
       
@@ -929,36 +900,27 @@ html {
         align-items: center;
         
         background-image: url("../assets/images/pattern copy 3.png");
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 22px;
-        
-        &:first-child {
-          background-color: $mid-blue;
-        }
-  
-        &:nth-child(2) {
-          background-color: $green;
-        }
-  
-        &:last-child {
-          background-color: $bright-orange;
-        }
       }
   
       .icon {
-        margin: 0 16px;
-        width: 18%;
+        margin: 10px 16px;
+        width: 40%;
         height: 1%;
       }
   
       .text {
         display: flex;
         flex-direction: column;
+        margin: 12px;
       }
       
       .title {
         font-family: $font-opensans-semibold;
-        font-size: 22px;
+        font-size: 24px;
         color: $white;
       }
       
@@ -966,25 +928,25 @@ html {
         width: 94%;
   
         font-family: $font-opensans-regular;
-        font-size: 14px;
+        font-size: 16px;
         color: $white;
         line-height: 1.6;
       }
       
       .arrow {
-        width: 9.5%;
+        width: 0;
+        height: 75px;
       }
       
       .arrow-icon {
-        margin-top: 40px;
-        width: 20px;
+        margin-top: 0;
+        width: 116px;
       }
   
       .fas {
         position: relative;
-        bottom: 81px;
-        left: 73%;
-  
+        bottom: 78px;
+        left: 56px;
         font-size: 45px;
         color: $white;
   
@@ -1001,17 +963,19 @@ html {
   
       #pug {
         position: relative;
-        bottom: 158px;
-  
-        width: 20%;
-        height: 180px;
+        bottom: 154px;
+
+        width: 88%;
+        height: 165px;
       }
     }
   
     .section-form {
-      padding: 4% 0 11%;
+      padding: 14% 0 21%;
   
       background-image: url("../assets/images/Rectangle 5.png");
+      background-position: top;
+      background-size: cover;
       background-repeat: no-repeat;
       
       .text {
@@ -1020,10 +984,10 @@ html {
   
       .title {
         font-family: $font-opensans-semibold;
-        font-size: 35px;
+        font-size: 29px;
         color: $white;
       }
-  
+
       .heading {
         font-family: $font-opensans-regular;
         font-size: 16px;
@@ -1034,51 +998,41 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 2% 20%;
+        margin: 0;
       }
       
       .form-group {
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
       }
   
       .form-control {
-        padding: 13px 16px;
-        margin: 0 10px;
+        padding: 15px 14px;
+        margin: 8px 0;
+        width: 292px;
   
         font-family: $font-opensans-regular;
         font-size: 12px;
-        color: white;
+        color: $white;
   
         background-color: transparent;
         border-radius: 8px;
-        textarea:focus, input:focus {
-          color: white;
-      }
+          textarea:focus, input:focus {
+            color: $white;
+        }
       }
   
       .form-message {
         width: 97%;
       }
-  
-      .heading {
-        padding: 10px 0;
-        margin-bottom: 0;
-  
-        font-family: $font-opensans-regular;
-        font-size: 20px;
-        color: $white;
-      }
-  
+
       .image-holder {
-        display: flex;
-        justify-content: center;
-        height: 10px;
+        display: none;
       }
   
       .food-image {
-        width: 38%;
-        height: 300px;
+        display: none;
       }
     }
   
@@ -1102,7 +1056,7 @@ html {
       }
   
       #pup-image {
-        width: 25%;
+        width: 76%;
       }
   
       .bg-pup {
@@ -1110,33 +1064,30 @@ html {
       }
   
       .title {
-        margin-top: 25px;
+        margin: 25px 0 0;
   
         font-family: $font-opensans-bold;
-        font-size: 45px;
+        font-size: 29px;
         color: $white;
-        letter-spacing: 1.5px;
+        letter-spacing: 0;
       }
   
-      .description {          
+      .description {
         font-family: $font-opensans-regular;
         font-size: 16px;
         color: $white;
-        line-height: 1.7;
-        text-align: center;
-  
-        &:first-child {
-          margin: 2% 0;
-        }
-  
-        &:last-child {
-          margin: 2% 4.2%;
+        line-height: 1.8;
+        text-align: unset;
+        
+        &:first-child,
+        &:nth-child(2) {
+          margin: 8% 0;
         }
       }
   
       .heading {
         font-family: $font-opensans-semibold;
-        font-size: 30px;
+        font-size: 18px;
         color: $white;
       }
     }
@@ -1176,40 +1127,40 @@ html {
       }
   
       .title {
-        margin-top: 17%;
+        margin-top: 67%;
         margin-bottom: 2%;
   
         font-family: $font-opensans-bold;
-        font-size: 35px;
+        font-size: 25px;
         color: $mid-blue;
       }
   
       .description {
-        margin: 0 0 20px;
-        width: 85%;
+        margin: 8px 0;
+        width: 95%;
         
         font-family: $font-opensans-regular;
-        font-size: 14px;
+        font-size: 16px;
         color: $mid-blue;
         line-height: 1.6;
         text-align: center;
       }
   
       .profile-icon {
-        margin: 18px 0 0;
-        width: 8%;
+        margin: 0;
+        width: 34%;
       }
   
       .name {
         margin: 10px 0 10px;
   
         font-family: $font-opensans-semibold;
-        font-size: 25px;
+        font-size: 22px;
         color: $mid-blue;
       }
   
       .type {
-        margin-bottom: 10%;
+        margin-bottom: 113px;
   
         font-family: $font-opensans-semibold;
         font-size: 14px;
@@ -1225,9 +1176,13 @@ html {
       background-position: bottom;
       background-size: cover;
   
+      .button-text-holder {
+        padding: 8% 0;
+      }
+
       .title {
         font-family: $font-opensans-semibold;
-        font-size: 40px;
+        font-size: 29px;
         color: $white;
         text-align: center;
       }
@@ -1237,6 +1192,7 @@ html {
         font-size: 16px;
         color: $white;
         text-align: center;
+        line-height: 1.8;
       }
     }
   }
