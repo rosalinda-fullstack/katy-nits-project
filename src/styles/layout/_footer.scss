@@ -464,3 +464,465 @@
         }
     }
 }
+
+@include respond-to (md) {
+    .section-footer {
+        background-image: url("../assets/images/Rectangle 9.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        .three-content-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 0;
+        }
+    
+        .pages {
+            display: flex;
+            flex-direction: column;
+            width: unset;
+            align-items: center;
+    
+            .title {
+                font-size: 22px;
+            }
+    
+            .page-list {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+            }
+    
+            .page-item {
+                margin-bottom: 0;
+    
+                list-style: none;
+            }
+    
+            .link {
+                font-size: 16px;
+                color: $white;
+                text-decoration: none;
+    
+                &:hover {
+                    color: $bright-orange;
+                }
+            }
+        }
+    
+        .image-text {
+            display: flex;
+            flex-direction: column;
+            margin: 38px 0;
+            width: unset;
+            justify-content: center;
+        }
+    
+        .logo {
+            display: none;
+        }
+    
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .heading {
+            margin: 10px 0;
+    
+            font-size: 19px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    
+        .icon-holder {
+            display: flex;
+            justify-content: center;
+    
+            .icon {
+                margin: 7px 10px;
+            }
+        }
+    
+        .term {
+            margin: 15px;
+    
+            font-size: 15px;
+        }
+    
+        .rights {
+            margin: 0;
+            width: 40%;
+            
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        .links {
+            display: flex;
+            flex-direction: column;
+            width: unset;
+            align-items: center;
+    
+            .title {
+                font-size: 22px;
+            }
+    
+            .link-list {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                align-items: center;
+           
+                .link-item {
+                    margin-bottom: 0;
+        
+                    list-style: none;
+                }
+        
+                .quick-links {
+                    font-size: 16px;
+                    color: $white;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: $bright-orange;
+                    }
+                }
+            }
+        }
+    
+        .footer-pug {
+            display: none;
+        }
+
+        #pug {
+            display: none;
+        }
+    }
+}
+
+@include respond-to (lg) {
+    .section-footer {
+        padding-top: 20%;
+
+        background-image: url("../assets/images/Rectangle 9.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        .three-content-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 0 35px;
+        }
+    
+        .pages {
+            display: flex;
+            flex-direction: column;
+            width: 17%;
+            align-items: end;
+    
+            .title {
+                font-family: $font-opensans-semibold;
+                font-size: 18px;
+                color: $white;
+            }
+    
+            .page-list {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+            }
+    
+            .page-item {
+                margin-bottom: 10px;
+    
+                list-style: none;
+            }
+    
+            .link {
+                font-family: $font-opensans-regular;
+                font-size: 14px;
+                color: $white;
+                text-decoration: none;
+    
+                &:hover {
+                    color: $bright-orange;
+                }
+            }
+        }
+    
+        .image-text {
+            display: flex;
+            flex-direction: column;
+            width: 34%;
+            justify-content: center;
+        }
+    
+        .logo {
+            margin: 0 20%;
+        }
+
+        .katy-footer {
+            width: 200px;
+        }
+    
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .heading {
+            margin: 40px 0 10px;
+    
+            font-family: $font-opensans-semibold;
+            font-size: 16px;
+            color: $white;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    
+        .icon-holder {
+            display: flex;
+            justify-content: center;
+    
+            .icon {
+                margin: 0 7px;
+            }
+        }
+    
+        .term {
+            margin: 6px 0;
+    
+            font-family: $font-opensans-regular;
+            font-size: 14px;
+            color: $white;
+        }
+    
+        .rights {
+            margin: 20px 0 0;
+            width: 57%;
+            
+            font-family: $font-opensans-regular;
+            font-size: 12px;
+            color: $white;
+            text-align: center;
+        }
+    
+        .links {
+            display: flex;
+            flex-direction: column;
+            width: 16%;
+            align-items: start;
+    
+            .title {
+                font-family: $font-opensans-semibold;
+                font-size: 18px;
+                color: $white;
+            }
+    
+            .link-list {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                align-items: start;
+           
+                .link-item {
+                    margin-bottom: 10px;
+        
+                    list-style: none;
+                }
+        
+                .quick-links {
+                    font-family: $font-opensans-regular;
+                    font-size: 14px;
+                    color: $white;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: $bright-orange;
+                    }
+                }
+            }
+        }
+    
+        .footer-pug {
+            width: 10px;
+            height: 10px;
+        }
+        
+        #pug {
+            position: relative;
+            top: 22px;
+            right: 13px;
+            bottom: 0;
+
+            width: 200px;
+            height: 305px;
+        } 
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section-footer {
+        background-image: url("../assets/images/Rectangle 9.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        .three-content-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 200px 0 35px;
+        }
+    
+        .pages {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            align-items: end;
+    
+            .title {
+                font-family: $font-opensans-semibold;
+                font-size: 20px;
+                color: $white;
+            }
+    
+            .page-list {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+            }
+    
+            .page-item {
+                margin-bottom: 10px;
+    
+                list-style: none;
+            }
+    
+            .link {
+                font-family: $font-opensans-regular;
+                font-size: 15px;
+                color: $white;
+                text-decoration: none;
+    
+                &:hover {
+                    color: $bright-orange;
+                }
+            }
+        }
+    
+        .image-text {
+            display: flex;
+            flex-direction: column;
+            width: 42%;
+            justify-content: center;
+        }
+    
+        .logo {
+            margin: 0 18.5%;
+        }
+    
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .heading {
+            margin: 40px 0 10px;
+    
+            font-family: $font-opensans-semibold;
+            font-size: 20px;
+            color: $white;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    
+        .icon-holder {
+            display: flex;
+            justify-content: center;
+    
+            .icon {
+                margin: 0 7px;
+            }
+        }
+    
+        .term {
+            margin: 150px 0 0;
+    
+            font-family: $font-opensans-regular;
+            font-size: 15px;
+            color: $white;
+        }
+    
+        .rights {
+            margin: 20px 0 0;
+            width: 53%;
+            
+            font-family: $font-opensans-regular;
+            font-size: 12px;
+            color: $white;
+            text-align: center;
+        }
+    
+        .links {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            align-items: start;
+    
+            .title {
+                font-family: $font-opensans-semibold;
+                font-size: 20px;
+                color: $white;
+            }
+    
+            .link-list {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                align-items: start;
+           
+                .link-item {
+                    margin-bottom: 10px;
+        
+                    list-style: none;
+                }
+        
+                .quick-links {
+                    font-family: $font-opensans-regular;
+                    font-size: 15px;
+                    color: $white;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: $bright-orange;
+                    }
+                }
+            }
+        }
+    
+        .footer-pug {
+            width: 10px;
+            height: 10px;
+        }
+        
+        #pug {
+            position: relative;
+            right: 57px;
+            bottom: 127px;
+            
+            width: 550px;
+        } 
+    }
+}

@@ -155,3 +155,168 @@
       }
     }
   }
+
+  @include respond-to (md) {
+    .btn {
+      padding: 8px 85px;
+      margin: 20px 220px;
+
+      background-color: $orange;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $orange;
+
+        a.btn-title {
+          color: $orange;
+        }
+      }
+    }
+
+    a.btn-title {
+      padding: 0;
+      margin-bottom: 0;
+
+      font-family: $font-opensans-semibold;
+      font-size: 17px;
+      color: $white;
+      text-decoration: none;
+    }
+
+    .btn-submit {
+      margin: 5% 25%;
+      width: 50%;
+
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $pale-green;
+
+        .submit-heading {
+          font-size: 20px;
+          color: $pale-green;
+        }
+      }
+    }
+  }
+
+  @include respond-to (lg) {
+    .btn {
+      padding: 14px 0;
+      margin: 0 35% 10%;
+
+      background-color: $orange;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+    &:hover {
+        background-color: $white;
+        border: 2px solid $orange;
+
+        a.btn-title {
+            color: $orange;
+        }
+    }
+  }
+
+  a.btn-title {
+    padding: 10px 76px 10px;
+    margin-bottom: 0;
+
+    font-family: $font-opensans-semibold;
+    font-size: 22px;
+    color: $white;
+    text-decoration: none;
+  }
+
+  .btn-submit {
+      padding: 0;
+      margin: 3% 31%;
+      width: 36%;
+
+      background-color: $pale-green;
+      border: 2px solid transparent;
+      border-radius: 10px;
+
+    &:hover {
+      background-color: $white;
+      border: 2px solid $pale-green;
+
+      .submit-heading {
+        color: $pale-green;
+      }
+    }
+  }
+
+  .submit-heading {
+    padding: 10px 0;
+    margin-bottom: 0;
+
+    font-family: $font-opensans-semibold;
+    font-size: 20px;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .btn {
+    padding: 14px 0;
+    margin: 0 38%;
+
+    background-color: $orange;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+  &:hover {
+      background-color: $white;
+      border: 2px solid $orange;
+
+      a.btn-title {
+          color: $orange;
+      }
+  }
+}
+
+a.btn-title {
+  padding: 10px 76px 10px;
+  margin-bottom: 0;
+
+  font-family: $font-opensans-semibold;
+  font-size: 22px;
+  color: $white;
+  text-decoration: none;
+}
+
+.btn-submit {
+    padding: 6px 0;
+    margin: 3% 26.8%;
+
+    background-color: $pale-green;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid $pale-green;
+
+    .submit-heading {
+      color: $pale-green;
+    }
+  }
+}
+
+.submit-heading {
+  padding: 10px 0;
+  margin-bottom: 0;
+
+  font-family: $font-opensans-semibold;
+  font-size: 22px;
+  color: $white;
+  text-decoration: none;
+}
+}

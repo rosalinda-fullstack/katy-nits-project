@@ -170,3 +170,150 @@
         }
     }
 }
+
+@include respond-to (md) {
+    .section-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+        background-color: transparent;
+        
+        z-index: 999;
+    
+        &.sticky {
+            background-color: $gradient-yellow;
+    
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #logo {
+            margin: 0 12px;
+        }
+
+        .navbar-toggler {
+            padding: 10px 12px;
+            
+            z-index: 999;
+        }
+
+        .navbar-nav {
+            padding: 38px 30px;
+        }
+        
+        .navbar {
+            padding: 15px 0 15px;
+
+            justify-content: space-between;
+        }
+
+        .navbar-collapse {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            
+            background-color: $gradient-yellow;
+        }
+    
+        .nav-item {
+            margin: 10px 0;
+        }
+    
+        .nav-link {
+            padding: 0;
+    
+            font-family: $font-opensans-semibold;
+            font-size: 18px;
+            color: $white;
+    
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@include respond-to (lg) {
+    .section-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 98.8%;
+    
+        background-color: transparent;
+        
+        z-index: 999;
+    
+        &.sticky {
+            background-color: $gradient-yellow;
+    
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .navbar {
+            padding: 15px 0 15px;
+        }
+    
+        .nav-item {
+            margin-right: 15px;
+        }
+    
+        .nav-link {
+            padding: 0;
+    
+            font-family: $font-opensans-semibold;
+            font-size: 16px;
+            color: $white;
+    
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+        width: 97.3%;
+        
+        background-color: transparent;
+        
+        z-index: 999;
+    
+        &.sticky {
+            background-color: $gradient-yellow;
+    
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .navbar {
+            padding: 15px 0 15px;
+        }
+    
+        .nav-item {
+            margin-right: 15px;
+        }
+    
+        .nav-link {
+            padding: 0;
+    
+            font-family: $font-opensans-semibold;
+            font-size: 16px;
+            color: $white;
+    
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
